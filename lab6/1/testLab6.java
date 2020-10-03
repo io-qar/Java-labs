@@ -17,6 +17,5 @@ public class testLab6 {
         }
 
         for (int i = 0; i < N; i++) System.out.println(students[i].idNumber); //вывод значений полей экземпляров Students
-
     }
 }
