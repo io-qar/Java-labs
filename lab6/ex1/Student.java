@@ -4,8 +4,4 @@ public class Student {
     Student(){
         this.idNumber = (int)(Math.random()*100);
     }
-
-    public void InsSort(){
-
-    }
 }
