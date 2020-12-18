@@ -14,11 +14,8 @@ public class Person {
     }
 
     public String toString() {
-        if (firstName == null || middleName == null) {
-            return lastName;
-        } else {
-            return (lastName + " " + ((firstName.toUpperCase()).toCharArray())[0] + "." + ((middleName.toUpperCase()).toCharArray())[0] + ".");
-        }
+        if (firstName == null || middleName == null) return lastName;
+        else return (lastName + " " + ((firstName.toUpperCase()).toCharArray())[0] + "." + ((middleName.toUpperCase()).toCharArray())[0] + ".");
     }
 
     public static void main(String[] args) {
