@@ -8,13 +8,8 @@ public class Phone {
     }
 
     public String parsePhoneNumber(String number) {
-
         String code = number.substring(0, number.length() - 10);
-
-        if (!(number.charAt(0) == '+')) {
-            code = "+" + code;
-        }
-
+        if (!(number.charAt(0) == '+')) code = "+" + code;
         number = number.substring(number.length() - 10);
         return code + number.substring(0, 3) + "-" + number.substring(3, 6) + "-" + number.substring(6, 10);
     }
@@ -29,6 +24,5 @@ public class Phone {
         Phone phone2 = new Phone("89175655655");
         System.out.println(phone1);
         System.out.println(phone2);
-
     }
 }
