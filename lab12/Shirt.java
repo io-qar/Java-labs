@@ -21,10 +21,10 @@ public class Shirt {
     @Override
     public String toString() {
         return "Shirt{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                ", size='" + size + '\'' +
+                "id = '" + id + '\'' +
+                ", name = '" + name + '\'' +
+                ", color = '" + color + '\'' +
+                ", size = '" + size + '\'' +
                 '}';
     }
 
@@ -44,13 +44,8 @@ public class Shirt {
 
         Shirt[] shirts1 = new Shirt[shirts.length];
 
-        for (int i = 0; i < shirts.length; i++) {
-            shirts1[i] = Shirt.parse(shirts[i]);
-        }
+        for (int i = 0; i < shirts.length; i++) shirts1[i] = Shirt.parse(shirts[i]);
 
-        for (var s : shirts1)
-            System.out.println(s);
-
+        for (var s : shirts1) System.out.println(s);
     }
-
 }
